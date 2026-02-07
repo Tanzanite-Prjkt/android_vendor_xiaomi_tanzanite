@@ -1,0 +1,5 @@
+radio/* filter=lfs diff=lfs merge=lfs -text
+proprietary/vendor/lib64/libanc_single_bokeh.so filter=lfs diff=lfs merge=lfs -text
+proprietary/vendor/lib64/libanc_fullhdr.so filter=lfs diff=lfs merge=lfs -text
+proprietary/vendor/lib64/libanc_single_rt_bokeh.so filter=lfs diff=lfs merge=lfs -text
+proprietary/vendor/lib64/libmvpu_clc_cl_compiler.so filter=lfs diff=lfs merge=lfs -text

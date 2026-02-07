@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<sixth_wrapper_config>
+    <config_element name="sipa_ctl_prefix" left_ctl="SpkrLeft" right_ctl="SpkrRight"
+        description="sipa driver kcontrol prefix"/>
+    <config_element name="hpf" enable="1" ch0_frq1="40"         ch0_chiptype1="2"
+                                          ch0_frq2="40"         ch0_chiptype2="3"
+                                          ch0_frq3="40"         ch0_chiptype3="17"
+                                          ch0_frq4="120"        ch0_chiptype4="21"
+                                          ch1_frq1="40"         ch1_chiptype1="4"
+                                          ch1_frq2="40"         ch1_chiptype2="5"
+                                          ch1_frq3="40"         ch1_chiptype3="18"
+                                          ch1_frq4="130"        ch1_chiptype4="21"
+        description="set hpf req"/>
+    <config_element name="vdd" enable="1" battery_node="/sys/devices/platform/hq_chg_manager/power_supply/battery/voltage_now"
+        vdd_step="10000" description="read vdd and set ad_hoc gain, vdd_step(mv)">
+    </config_element>
+    <config_element name="timer_cfg" enable="0" description="turn on/off timer"/>
+    <config_element name="debug_cfg" enable="0" description="turn on/off debug msg"/>
+    <config_element name="pvdd_limit_cfg" enable="0" description="turn on/off pvdd limit"/>
+</sixth_wrapper_config>
