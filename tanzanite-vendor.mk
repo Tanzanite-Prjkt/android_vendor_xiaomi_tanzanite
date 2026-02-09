@@ -535,7 +535,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/tanzanite/proprietary/vendor/etc/camera/xml/tanzanite/sceneDetection_tanzanite_wide_iii.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/xml/tanzanite/sceneDetection_tanzanite_wide_iii.xml \
     vendor/xiaomi/tanzanite/proprietary/vendor/etc/camera/xml/xiaomiSceneDetection.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/xml/xiaomiSceneDetection.xml \
     vendor/xiaomi/tanzanite/proprietary/vendor/etc/cust_color_dsi_o7_38_0c_0a_dsc_vdo.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cust_color_dsi_o7_38_0c_0a_dsc_vdo.xml \
-    vendor/xiaomi/tanzanite/proprietary/vendor/etc/dolby/dax-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dolby/dax-default.xml \
     vendor/xiaomi/tanzanite/proprietary/vendor/etc/dsi_o7_38_0c_0a_dsc_vdo_mi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dsi_o7_38_0c_0a_dsc_vdo_mi.xml \
     vendor/xiaomi/tanzanite/proprietary/vendor/etc/ecc_list.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ecc_list.xml \
     vendor/xiaomi/tanzanite/proprietary/vendor/etc/ecc_list_OP01.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ecc_list_OP01.xml \
@@ -594,7 +593,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/tanzanite/proprietary/vendor/etc/init/tee-supplicant.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/tee-supplicant.rc \
     vendor/xiaomi/tanzanite/proprietary/vendor/etc/init/tetheroffloadservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/tetheroffloadservice.rc \
     vendor/xiaomi/tanzanite/proprietary/vendor/etc/init/v3avpud.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/v3avpud.rc \
-    vendor/xiaomi/tanzanite/proprietary/vendor/etc/init/vendor.dolby.hardware.dms@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.dolby.hardware.dms@2.0-service.rc \
     vendor/xiaomi/tanzanite/proprietary/vendor/etc/init/vendor.mediatek.hardware.mmagent@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.mmagent@1.1-service.rc \
     vendor/xiaomi/tanzanite/proprietary/vendor/etc/init/vendor.mediatek.hardware.mms@1.6-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.mms@1.6-service.rc \
     vendor/xiaomi/tanzanite/proprietary/vendor/etc/init/vendor.mediatek.hardware.nvram@1.1-sevice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.nvram@1.1-sevice.rc \
@@ -1078,9 +1076,6 @@ PRODUCT_PACKAGES += \
     libconnfem \
     libcustom_nvram \
     libcvsd_mtk \
-    libdapparamstorage \
-    libdeccfg \
-    libdlbdsservice \
     libfgauge_gm30 \
     libfile_op \
     libforkexecwrap \
@@ -1632,9 +1627,6 @@ PRODUCT_PACKAGES += \
     sc202v_truly_macro_mipi_raw_IdxMgr \
     sc202v_truly_macro_mipi_raw_tuning \
     libmtkcam_streaminfo_plugin-p1stt \
-    libswdap \
-    vendor.dolby.hardware.dms@2.0-impl \
-    vendor.dolby.hardware.dms@2.0 \
     vendor.mediatek.hardware.apuware.apusys@2.0 \
     vendor.mediatek.hardware.apuware.apusys@2.1 \
     vendor.mediatek.hardware.apuware.hmp@1.0 \
@@ -1712,7 +1704,6 @@ PRODUCT_PACKAGES += \
     manifest_apuware_utils.xml \
     manifest_cameraprovider.xml \
     manifest_media_c2_V1_2_default.xml \
-    manifest_vendor.dolby.hardware.dms.xml \
     vendor.xiaomi.sensor.citsensorservice@2.0-service.xml \
     batterysecret \
     ccci_mdinit \
@@ -1730,7 +1721,6 @@ PRODUCT_PACKAGES += \
     camerahalserver \
     mtkfusionrild \
     tetheroffloadservice \
-    vendor.dolby.hardware.dms@2.0-service \
     vendor.mediatek.hardware.mmagent@1.1-service \
     vendor.mediatek.hardware.mms@1.6-service \
     vendor.mediatek.hardware.nvram@1.1-service \
