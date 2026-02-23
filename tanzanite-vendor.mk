@@ -763,11 +763,6 @@ PRODUCT_PACKAGES += \
     com.xiaomi.plugin.superlowlight \
     com.xiaomi.plugin.swflip \
     com.xiaomi.plugin.yuvfullhdr \
-    libGLES_meow \
-    libMEOW_data \
-    libMEOW_gift \
-    libMEOW_qt \
-    libMEOW_trace \
     libGLES_mali \
     hq_algoutils \
     android.hardware.gnss-impl-mediatek \
@@ -991,12 +986,9 @@ PRODUCT_PACKAGES += \
     libCamera_sc202vtrulymacromipiraw_Scene_Preview_ZSD_Flash \
     libCamera_sc202vtrulymacromipiraw_Video_1080 \
     libCamera_sc202vtrulymacromipiraw_Video_4k \
-    libDefaultFpsActor \
-    libFrameRecord \
     libJpgEncPipe \
     libMiVideoFilter \
     libMtkSpeechEnh \
-    libNoFpsActor \
     libOpenCL \
     libSQLiteModule_VER_ALL \
     libTEECommon \
@@ -1109,7 +1101,6 @@ PRODUCT_PACKAGES += \
     libminiui \
     libmipc \
     libmisight \
-    libmisoundcrossfade \
     libmmagent \
     libmml \
     libmnetlink_v104 \
@@ -1682,15 +1673,8 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.videotelephony@1.0_vendor \
     vendor.xiaomi.sensor.citsensorservice@1.1 \
     vendor.xiaomi.sensor.citsensorservice@2.0 \
-    libaudiotoolkit \
-    libem_aoltest_jni \
-    libem_audio_jni \
-    libem_bleoffload_jni \
-    libem_support_jni \
-    libem_wifi_jni \
     JVFactoryTest_O7 \
     goodix_sz_miui \
-    EngineerMode \
     android.hardware.neuralnetworks-shim-service-mtk.xml \
     android.hardware.security.keymint-service.mitee.xml \
     android.hardware.security.secureclock-service.mitee.xml \
