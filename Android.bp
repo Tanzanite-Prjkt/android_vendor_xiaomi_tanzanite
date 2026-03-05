@@ -3021,7 +3021,7 @@ cc_prebuilt_library_shared {
                 "android.hardware.graphics.allocator@4.0",
                 "android.hardware.graphics.mapper@4.0",
                 "android.hardware.graphics.common@1.2",
-                "libtinyxml2-v34",
+                "libtinyxml2",
                 "libjsoncpp",
                 "libdrm",
                 "libbinder",
@@ -28346,15 +28346,6 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-    name: "manifest_media_c2_V1_2_default.xml",
-    owner: "xiaomi",
-    src: "proprietary/vendor/etc/vintf/manifest/manifest_media_c2_V1_2_default.xml",
-    filename_from_src: true,
-    sub_dir: "vintf/manifest",
-    soc_specific: true,
-}
-
-prebuilt_etc_xml {
     name: "vendor.xiaomi.sensor.citsensorservice@2.0-service.xml",
     owner: "xiaomi",
     src: "proprietary/vendor/etc/vintf/manifest/vendor.xiaomi.sensor.citsensorservice@2.0-service.xml",
@@ -28632,50 +28623,6 @@ cc_prebuilt_binary {
         },
     },
     compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    relative_install_path: "hw",
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "android.hardware.media.c2@1.2-mediatek-64b",
-    owner: "xiaomi",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/hw/android.hardware.media.c2@1.2-mediatek-64b",
-            ],
-            shared_libs: [
-                "libstagefright_foundation-v33",
-                "libbase",
-                "liblog",
-                "libcodec2",
-                "libutils",
-                "android.hardware.media.c2@1.0",
-                "android.hardware.media.c2@1.1",
-                "android.hardware.media.c2@1.2",
-                "libcodec2_hidl@1.0",
-                "libcodec2_hidl@1.1",
-                "libcodec2_hidl@1.2",
-                "libcodec2_vndk",
-                "libhidlbase",
-                "libavservices_minijail",
-                "libbinder",
-                "libcodec2_mtk_c2store",
-                "libcodec2_mtk_vdec",
-                "libcodec2_mtk_venc",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    check_elf_files: false,
     strip: {
         none: true,
     },
