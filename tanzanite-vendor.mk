@@ -6,6 +6,7 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/xiaomi/tanzanite
 
 PRODUCT_COPY_FILES += \
+    vendor/xiaomi/tanzanite/proprietary/system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.android.hotwordenrollment.common.util.xml \
     vendor/xiaomi/tanzanite/proprietary/vendor/etc/AbnormalDisplayLog_dynamic.xml:$(TARGET_COPY_OUT_VENDOR)/etc/AbnormalDisplayLog_dynamic.xml \
     vendor/xiaomi/tanzanite/proprietary/vendor/etc/AudioLog_dynamic.xml:$(TARGET_COPY_OUT_VENDOR)/etc/AudioLog_dynamic.xml \
     vendor/xiaomi/tanzanite/proprietary/vendor/etc/MNL_Config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/MNL_Config.xml \
@@ -612,7 +613,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/tanzanite/proprietary/vendor/etc/meow.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/meow.cfg \
     vendor/xiaomi/tanzanite/proprietary/vendor/etc/mpe.conf:$(TARGET_COPY_OUT_VENDOR)/etc/mpe.conf \
     vendor/xiaomi/tanzanite/proprietary/vendor/etc/nnapi_powerhal.json:$(TARGET_COPY_OUT_VENDOR)/etc/nnapi_powerhal.json \
-    vendor/xiaomi/tanzanite/proprietary/vendor/etc/permissions/android.hardware.hardware_keystore.mitee.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.hardware_keystore.mitee.xml \
     vendor/xiaomi/tanzanite/proprietary/vendor/etc/rsc/default/ro.prop:$(TARGET_COPY_OUT_VENDOR)/etc/rsc/default/ro.prop \
     vendor/xiaomi/tanzanite/proprietary/vendor/etc/rsc/default/rw.prop:$(TARGET_COPY_OUT_VENDOR)/etc/rsc/default/rw.prop \
     vendor/xiaomi/tanzanite/proprietary/vendor/etc/rsc/obsidian_eea/ro.prop:$(TARGET_COPY_OUT_VENDOR)/etc/rsc/obsidian_eea/ro.prop \
@@ -681,7 +681,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/tanzanite/proprietary/vendor/firmware/soc_fm_v1_patch.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/soc_fm_v1_patch.bin \
     vendor/xiaomi/tanzanite/proprietary/vendor/firmware/txpowerctrl.cfg:$(TARGET_COPY_OUT_VENDOR)/firmware/txpowerctrl.cfg \
     vendor/xiaomi/tanzanite/proprietary/vendor/firmware/wifi.cfg:$(TARGET_COPY_OUT_VENDOR)/firmware/wifi.cfg \
-    vendor/xiaomi/tanzanite/proprietary/vendor/lib/egl/egl.cfg:$(TARGET_COPY_OUT_VENDOR)/lib/egl/egl.cfg \
     vendor/xiaomi/tanzanite/proprietary/vendor/libnfc-nxp_RF.conf:$(TARGET_COPY_OUT_VENDOR)/libnfc-nxp_RF.conf \
     vendor/xiaomi/tanzanite/proprietary/vendor/mitee/ta/14b0aad8-c011-4a3f-b66aca8d0e66f273.ta:$(TARGET_COPY_OUT_VENDOR)/mitee/ta/14b0aad8-c011-4a3f-b66aca8d0e66f273.ta \
     vendor/xiaomi/tanzanite/proprietary/vendor/mitee/ta/377ee4e8-af0e-474f-a9d636a9268fe85c.ta:$(TARGET_COPY_OUT_VENDOR)/mitee/ta/377ee4e8-af0e-474f-a9d636a9268fe85c.ta \
@@ -741,7 +740,7 @@ PRODUCT_PACKAGES += \
     APUWareHmpServer \
     APUWareUtilsServer \
     anc.hal \
-    android.hardware.security.keymint-V3-ndk-v34 \
+    android.hardware.security.keymint-V3-ndk-v35 \
     com.xiaomi.plugin.capbokeh \
     com.xiaomi.plugin.memcpy \
     com.xiaomi.plugin.mibokeh \
@@ -752,7 +751,6 @@ PRODUCT_PACKAGES += \
     com.xiaomi.plugin.swflip \
     com.xiaomi.plugin.yuvfullhdr \
     libGLES_mali \
-	arm.graphics-V3-ndk \
     hq_algoutils \
     android.hardware.gnss-impl-mediatek \
     android.hardware.gnss@2.1-impl-mediatek \
@@ -1003,8 +1001,6 @@ PRODUCT_PACKAGES += \
     libapusys \
     libapusys_edma \
     libarmnn \
-	libarm_egl_properties_sysprop \
-	libarm_gralloc_properties_sysprop \
     libarmnn_ndk.mtk.vndk \
     libasn1c_core \
     libasn1c_mapi \
@@ -1082,7 +1078,6 @@ PRODUCT_PACKAGES += \
     libjpeg-alpha-oal_vendor \
     libjpeg-alpha_vendor \
     libksensor \
-	liblibarm_mali_config_sysprops \
     libmi_bokehpre \
     libmialgo_ai_vision \
     libmialgo_sd \
@@ -1667,6 +1662,9 @@ PRODUCT_PACKAGES += \
     vendor.xiaomi.sensor.citsensorservice@2.0 \
     JVFactoryTest_O7 \
     goodix_sz_miui \
+    HotwordEnrollmentOKGoogleRISCV \
+    HotwordEnrollmentXGoogleRISCV \
+    com.android.hotwordenrollment.common.util \
     android.hardware.neuralnetworks-shim-service-mtk.xml \
     android.hardware.security.keymint-service.mitee.xml \
     android.hardware.security.secureclock-service.mitee.xml \
