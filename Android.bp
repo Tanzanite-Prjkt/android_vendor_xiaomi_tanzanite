@@ -1482,7 +1482,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "android.hardware.security.keymint-V3-ndk-v34",
+    name: "android.hardware.security.keymint-V3-ndk-v35",
     owner: "xiaomi",
     strip: {
         none: true,
@@ -1490,7 +1490,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/android.hardware.security.keymint-V3-ndk-v34.so",
+                "proprietary/vendor/lib64/android.hardware.security.keymint-V3-ndk-v35.so",
             ],
             shared_libs: [
                 "libbinder_ndk",
@@ -28246,6 +28246,39 @@ android_app_import {
     soc_specific: true,
 }
 
+android_app_import {
+    name: "HotwordEnrollmentOKGoogleRISCV",
+    owner: "xiaomi",
+    apk: "proprietary/product/priv-app/HotwordEnrollmentOKGoogleRISCV/HotwordEnrollmentOKGoogleRISCV.apk",
+    certificate: "platform",
+    dex_preopt: {
+        enabled: false,
+    },
+    privileged: true,
+    product_specific: true,
+}
+
+android_app_import {
+    name: "HotwordEnrollmentXGoogleRISCV",
+    owner: "xiaomi",
+    apk: "proprietary/product/priv-app/HotwordEnrollmentXGoogleRISCV/HotwordEnrollmentXGoogleRISCV.apk",
+    certificate: "platform",
+    dex_preopt: {
+        enabled: false,
+    },
+    privileged: true,
+    product_specific: true,
+}
+
+dex_import {
+    name: "com.android.hotwordenrollment.common.util",
+    owner: "xiaomi",
+    jars: [
+        "proprietary/system_ext/framework/com.android.hotwordenrollment.common.util.jar",
+    ],
+    system_ext_specific: true,
+}
+
 prebuilt_etc_xml {
     name: "android.hardware.neuralnetworks-shim-service-mtk.xml",
     owner: "xiaomi",
@@ -28678,7 +28711,7 @@ cc_prebuilt_binary {
                 "libhardware",
                 "libhidlbase",
                 "android.hardware.keymaster@4.0",
-                "android.hardware.security.keymint-V3-ndk-v34",
+                "android.hardware.security.keymint-V3-ndk-v35",
                 "android.hardware.security.sharedsecret-V1-ndk",
                 "android.hardware.security.secureclock-V1-ndk",
                 "lib_android_keymaster_keymint_utils",
