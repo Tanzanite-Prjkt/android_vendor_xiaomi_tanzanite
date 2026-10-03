@@ -978,6 +978,7 @@ PRODUCT_PACKAGES += \
     libJpgEncPipe \
     libMiVideoFilter \
     libMtkSpeechEnh \
+    libOemcrypto_Hal \
     libOpenCL \
     libSQLiteModule_VER_ALL \
     libTEECommon \
