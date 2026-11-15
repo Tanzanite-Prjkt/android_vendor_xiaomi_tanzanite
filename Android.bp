@@ -2022,7 +2022,7 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libcutils",
                 "libutils",
-                "libalsautils",
+                "libalsautils-v32",
                 "libhardware_legacy",
                 "libhardware",
                 "libaudioutils",
