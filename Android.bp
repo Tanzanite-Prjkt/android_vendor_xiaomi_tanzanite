@@ -7783,6 +7783,36 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libOemcrypto_Hal",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libOemcrypto_Hal.so",
+            ],
+            shared_libs: [
+                "libteecli",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libion",
+                "libdmabufheap",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libOpenCL",
     owner: "xiaomi",
     strip: {
